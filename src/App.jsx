@@ -5,7 +5,8 @@ function getPageFromPath(pathname) {
   const p = pathname.toLowerCase();
   if (p.startsWith('/groundnut')) return 'groundnut';
   if (p.startsWith('/cucumber')) return 'cucumber';
-  if (p.startsWith('/gg')) return 'gg';
+  // Support explicit Green Gram path and legacy shorthand
+  if (p.startsWith('/green-gram') || p.startsWith('/gg')) return 'gg';
   return 'paddy';
 }
 
@@ -48,7 +49,7 @@ export default function App() {
         ? '/groundnut'
         : page === 'cucumber'
         ? '/cucumber'
-        : '/gg';
+        : '/green-gram';
     if (window.location.pathname !== desired) {
       window.history.replaceState({}, '', desired);
     }
@@ -145,31 +146,28 @@ export default function App() {
             <div className="mt-6 grid grid-cols-1 gap-4">
               <div className="rounded-xl bg-white/20 border border-white/40 px-4 py-3 text-gray-900">
                 <div className="text-gray-700 text-xs">1. Gazette Notification</div>
-                <div className="text-lg">S.O.3922(E), Dated 12-9-2024</div>
+                <div className="text-lg">S.O.3922</div>
               </div>
               <div className="rounded-xl bg-white/20 border border-white/40 px-4 py-3 text-gray-900">
                 <div className="text-gray-700 text-xs">2. Title of Bio Stimulant</div>
-                <div className="text-lg">Sea Weed Extract — Ascophyllum nodosum 15% (Liquid)</div>
+                <div className="text-lg">Humates</div>
               </div>
               <div className="rounded-xl bg-white/20 border border-white/40 px-4 py-3 text-gray-900">
                 <div className="text-gray-700 text-xs">3. Composition</div>
                 <ul className="text-sm mt-1 space-y-1 list-disc pl-5">
-                  <li>Sea Weed Extract</li>
-                  <li>(1) Ascophyllum nodosum 15% (Liquid)</li>
-                  <li>(i) Alginic Acid per cent by weight, minimum: 1.5</li>
-                  <li>(ii) Mannitol per cent by weight, minimum: 1.0</li>
-                  <li>(iii) pH (10% aqueous solution): 4.7 + 1.0</li>
-                  <li>(iv) Specific gravity: 1.0 – 1.1</li>
-                  <li>(v) Total organic carbon per cent by weight, minimum: 5</li>
+                  <li>Humic Acid percent by weight minimum: 10.0</li>
+                  <li>Fulvic Acid percent by weight minimum: 2.5</li>
+                  <li>pH (10% aqueous solution): 12–14</li>
+                  <li>Specific Gravity: 1.0–1.20</li>
                 </ul>
               </div>
               <div className="rounded-xl bg-white/20 border border-white/40 px-4 py-3 text-gray-900">
                 <div className="text-gray-700 text-xs">4. Crops</div>
-                <div className="text-lg">Green gram</div>
+                <div className="text-lg">Green Gram</div>
               </div>
               <div className="rounded-xl bg-white/20 border border-white/40 px-4 py-3 text-gray-900">
                 <div className="text-gray-700 text-xs">5. Dosage</div>
-                <div className="text-lg">Two foliar applications at 1.5 l/ha</div>
+                <div className="text-lg">Two soil application at 5L/ha</div>
               </div>
             </div>
           </motion.div>
