@@ -1,9 +1,9 @@
 .shiny-text {
-  color: #FFD700; /* Gold */
+  color: #000000; /* Black */
   background: linear-gradient(
     120deg,
     rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0.6) 50%,
     rgba(255, 255, 255, 0) 60%
   );
   background-size: 200% 100%;

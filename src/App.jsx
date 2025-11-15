@@ -367,7 +367,7 @@ export default function App() {
          </div>
 
         {/* Logo video header */}
-        <div className="rounded-2xl bg-white border border-white/60 px-4 py-6 sm:px-6 sm:py-8 text-gray-900">
+        <div className="rounded-2xl bg-white/10 border border-white/40 backdrop-blur-sm px-4 py-6 sm:px-6 sm:py-8 text-gray-900">
           <div className="flex items-center justify-center">
             <video src="/logo.mp4" className="w-64 sm:w-80 h-auto object-contain rounded-md" autoPlay loop muted playsInline />
           </div>
