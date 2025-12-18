@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import StarBorder from './StarBorder.jsx';
-import './StarBorder.css';
+// import StarBorder from './StarBorder';
+// import './StarBorder.css';
 import { PRODUCTS, findProductBySlug } from './productsData.js';
 
 export default function App() {
@@ -46,7 +46,7 @@ export default function App() {
         </div>
       )}
 
-      <img className="absolute inset-0 -z-30 w-full h-full object-cover" src="/try1.png" alt="Background" loading="eager" fetchPriority="high" decoding="async" />
+      <img className="fixed inset-0 -z-30 w-full h-full object-cover" src="/try1.png" alt="Background" loading="eager" fetchPriority="high" decoding="async" />
 
       {/* top spacer */}
       <div className="h-4 sm:h-6" />
@@ -76,7 +76,7 @@ export default function App() {
 
         {/* Info grid with StarBorder */}
         <section className="mt-8 grid grid-cols-1 gap-4">
-          <StarBorder as="div" className="w-full" color="cyan" speed="5s" thickness={2}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">📰</span>
@@ -86,9 +86,9 @@ export default function App() {
                 <div className="text-base sm:text-lg">{product?.gazette || 'SO:3922(E), Dated:12-09-2024'}</div>
               </div>
             </div>
-          </StarBorder>
+          </div>
 
-          <StarBorder as="div" className="w-full" color="cyan" speed="5s" thickness={2}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">⚗️</span>
@@ -98,9 +98,9 @@ export default function App() {
                 <div className="text-base sm:text-lg">{product?.specification || 'Humic Acid 5% (Powder)'}</div>
               </div>
             </div>
-          </StarBorder>
+          </div>
 
-          <StarBorder as="div" className="w-full" color="cyan" speed="5s" thickness={2}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">🧪</span>
@@ -110,9 +110,9 @@ export default function App() {
                 <div className="mt-1 text-sm sm:text-base text-white">{product?.specification || 'Humic Acid 5% (Powder)'}</div>
               </div>
             </div>
-          </StarBorder>
+          </div>
 
-          <StarBorder as="div" className="w-full" color="cyan" speed="5s" thickness={2}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">🌶️</span>
@@ -122,9 +122,9 @@ export default function App() {
                 <div className="text-base sm:text-lg">{(product?.crops || ['Chilli Pepper']).join(', ')}</div>
               </div>
             </div>
-          </StarBorder>
+          </div>
 
-          <StarBorder as="div" className="w-full" color="cyan" speed="5s" thickness={2}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">🧴</span>
@@ -142,8 +142,8 @@ export default function App() {
                 )}
               </div>
             </div>
-          </StarBorder>
-          <StarBorder as="div" className="w-full" color="cyan" speed="5s" thickness={2}>
+          </div>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">🏭</span>
@@ -170,7 +170,7 @@ export default function App() {
                 </div>
               </div>
             </div>
-          </StarBorder>
+          </div>
         </section>
       </main>
     </div>
