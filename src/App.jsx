@@ -17,7 +17,7 @@ export default function App() {
     const rawPath = window.location.pathname.replace(/^\//, '');
     const found = findProductBySlug(rawPath);
     setProduct(found);
-    document.title = `${found.brand} — Product Information`;
+    document.title = `${found?.brand || 'Loading...'} — Product Information`;
   }, []);
 
 
@@ -69,62 +69,62 @@ export default function App() {
             </div>
             <div className="flex-1">
               <div className="text-[#d9c98f] text-xs sm:text-sm">Product Name:</div>
-              <div className="text-white text-xl sm:text-2xl font-semibold tracking-wide">{product?.brand || 'HUMICID'}</div>
+              <div className="text-white text-xl sm:text-2xl font-semibold tracking-wide">{product?.brand}</div>
             </div>
           </div>
         </section>
 
         {/* Info grid with StarBorder */}
         <section className="mt-8 grid grid-cols-1 gap-4">
-          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">📰</span>
               </div>
               <div className="flex-1">
                 <div className="text-[#d9c98f] text-sm">Gazette Notification:</div>
-                <div className="text-base sm:text-lg">{product?.gazette || 'SO:3922(E), Dated:12-09-2024'}</div>
+                <div className="text-base sm:text-lg text-white">{product?.gazette}</div>
               </div>
             </div>
           </div>
 
-          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">⚗️</span>
               </div>
               <div className="flex-1">
                 <div className="text-[#d9c98f] text-sm">Title of Bio Stimulant:</div>
-                <div className="text-base sm:text-lg">{product?.specification || 'Humic Acid 5% (Powder)'}</div>
+                <div className="text-base sm:text-lg text-white whitespace-pre-line">{product?.specification}</div>
               </div>
             </div>
           </div>
 
-          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">🧪</span>
               </div>
               <div className="flex-1">
                 <div className="text-[#d9c98f] text-sm">Composition</div>
-                <div className="mt-1 text-sm sm:text-base text-white">{product?.specification || 'Humic Acid 5% (Powder)'}</div>
+                <div className="mt-1 text-sm sm:text-base text-white whitespace-pre-line">{product?.composition}</div>
               </div>
             </div>
           </div>
 
-          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">🌶️</span>
               </div>
               <div className="flex-1">
                 <div className="text-[#d9c98f] text-sm">Crops:</div>
-                <div className="text-base sm:text-lg">{(product?.crops || ['Chilli Pepper']).join(', ')}</div>
+                <div className="text-base sm:text-lg text-white">{product?.crops?.join(', ')}</div>
               </div>
             </div>
           </div>
 
-          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">🧴</span>
@@ -137,36 +137,21 @@ export default function App() {
                       <li key={i} className="text-white/90">{d}</li>
                     ))}
                   </ul>
-                ) : (
-                  <div className="text-base sm:text-lg">three foliar application at 0.5 g/L</div>
-                )}
+                ) : null}
               </div>
             </div>
           </div>
-          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">🏭</span>
               </div>
               <div className="flex-1">
-                <div className="text-[#d9c98f] text-sm">Manufactured By:</div>
-                <div className="text-white/90 text-sm sm:text-base">SUSTHIRA BIO ORGANICS LLP</div>
+                <div className="text-[#d9c98f] text-sm">Manufactured and Marketed By:</div>
                 <div className="text-white/80 text-xs sm:text-sm mt-1 leading-snug">
-                  No.1, Aswath Narayana Road,<br />
-                  Near Akshaya Nagar, Tirumala Nagar,<br />
-                  Attur, Yelahanka, Bangalore -560064
-                </div>
-
-                <div className="mt-3 text-[#d9c98f] text-sm">Marketed By:</div>
-                <div className="text-white/90 text-sm sm:text-base">N CHEM SCIENCES</div>
-                <div className="text-white/80 text-xs sm:text-sm mt-1 leading-snug">
-                  MPL No.14-1-20/7/18 9 26 27 & 36<br />
-                  38<br />
-                  Sadashiva Phase-III, Eklaspur Village<br />
-                  Bypass Manchalapur Road<br />
-                  Raichur - 584101<br />
-                  Raichur Dist<br />
-                  Karnataka State
+                  Ground Floor, Plot No.56 Tubinkere Industrial Area,<br />
+                  Bangalore Mysore Road, Mandya-571402. Karnataka<br />
+                  Customer Care No. : 78921 76447, Email:microphostbt@gmail.com
                 </div>
               </div>
             </div>

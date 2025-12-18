@@ -2,96 +2,66 @@ export const GAZETTE = 'SO:3922(E), Dated:12-09-2024';
 
 export const PRODUCTS = [
   {
-    brand: 'HUMICID',
-    specification: 'Humic Acid 5% (Powder)',
-    dosage: ['Three Foliar Application at 0.5 g/l'],
-    crops: ['Chilli Pepper'],
-    gazette: GAZETTE,
-  },
-  {
-    brand: 'HUMICID +',
-    specification: 'Potassium Humate 49% (Powder)',
-    dosage: ['One Soil Application at 1 kg/ha'],
-    crops: ['Paddy'],
-    gazette: GAZETTE,
-  },
-  {
     brand: 'HUMICID ++',
     specification: 'Humic and Fulvic Acid 25.05% (Liquid)',
+    composition: 'Humic and Fulvic Acid 25.05% (Liquid)',
     dosage: ['Five Equal Soil Drench application at 10 l/ha'],
     crops: ['Tomato'],
     gazette: GAZETTE,
   },
   {
-    brand: 'SEA EXTRACT',
-    specification: 'Ascophyllum nodosum 15% (Liquid)',
-    dosage: ['Two Foliar applications at 1.5 l/ha'],
+    brand: 'MULTI ROOT',
+    specification: 'Humates (12.5%) (Liquid)\nSoil Application',
+    composition: 'Humic Acid per cent. by weight minimum : 10\nFulvic Acid percent. by weight minimum : 2.5\npH (10 % aq soluƟon) : 12-14\nSpecific Gravity : 1.0-1.20',
+    dosage: ['Two soil applications at 5 l/ha'],
     crops: ['Green Gram'],
     gazette: GAZETTE,
   },
   {
-    brand: 'BOT EXTRACT',
-    specification: 'Spirulina 10% (Liquid)',
-    dosage: ['Two Foliar applications Sprays at 750 ml/ha'],
-    crops: ['Chilli', 'Tomato'],
+    brand: 'PRINCE GOLD',
+    specification: 'Humic Acid 1.5% (Granules)\nSoil Application',
+    composition: 'Humic Acid per cent. by weight minimum : 1.5\nTotal organic carbon per cent. by weight, minimum : 1.32\nBulk density (g/cc) : 1.0403 ± 0.03\nOrganic matter per cent. by weight, minimum : 2.28\npH (10 % aqueous solution) : 6.0- 8.0\nSolubility per cent., minimum : 11',
+    dosage: ['Two soil applications at 30 kg/ha'],
+    crops: ['Chilli'],
     gazette: GAZETTE,
   },
   {
-    brand: 'OR MIX (NUTRIENT MOBILIZER)',
-    specification: 'Mixture of Seaweed extract: Humic, Fulvic Acid, Amino Acids and Vitamins (Liquid)',
-    dosage: [
-      'Two Foliar Applications at 2 l/ha',
-    ],
-    crops: ['Cotton'],
+    brand: 'PH-60',
+    specification: 'Humic and Fulvic Acid 76% (Powder)\nFoliar application',
+    composition: '1 Humic Acid per cent. by weight minimum 75\n2 Fulvic acid per cent. by weight, minimum 1\n3 Total organic carbon per cent. by weight, minimum 26.82\n4 Bulk density (g/ml) 0.8745 ± 0.02\n5 pH (1% aqueous solution) 7.60 ± 0.2\n6 Solubility per cent., minimum 91.64',
+    dosage: ['Two foliar applications at 750 g/ha'],
+    crops: ['Tomato'],
     gazette: GAZETTE,
   },
   {
-    brand: 'N CHEM (PRO-H)',
-    specification: 'Bacteria biomass hydrolysate (Amino Acids 2%) Liquid',
-    dosage: [
-      'Three Foliar Applications at 3.75 l/ha',
-      'Three Foliar Applications at 2.5 l/ha',
-      'Three Foliar Applications at 2.5 l/ha',
-      'Four Foliar Sprays at 1.25 l/ha to 2.0 l/ha Depending on canopy size',
-    ],
-    crops: ['Chilli', 'Soyabean', 'Cotton', 'Grape'],
+    brand: 'KALPAVRUKSHA',
+    specification: 'Potassium Humate 49% (Powder)\nSoil Application',
+    composition: '1 Humic Acid percent by weight minimum : 21\n2 pH (1 % aq soluƟon): 6.0-8.0',
+    dosage: ['One time soil application at 1 kg/ha'],
+    crops: ['Paddy'],
     gazette: GAZETTE,
   },
   {
-    brand: 'N CHEM (Micro - Cell)',
-    specification: 'Microbial Cell (Methylococcus): 1*10^9 cfu/g (Powder)',
-    dosage: [
-      'Three Applications (One Seedling dip and two foliar applications) at 40 g/ha',
-      'Two foliar applications at 40 g/ha',
-    ],
-    crops: ['Paddy', 'Maize'],
-    gazette: GAZETTE,
-  },
-  {
-    brand: 'N CHEM (Micro - Con)',
-    specification: 'Microbial Consortium 1*10^7 cfu/g',
-    dosage: ['Single Soil Application just before planting at 7.5 kg/ha as basal dose'],
-    crops: ['Onion'],
+    brand: 'SHIRI PHOS',
+    specification: 'Protein hydrolysate 25% (Plant source) (Liquid)\nFoliar application',
+    composition: '1 Free amino acids per cent. by weight, minimum 8.5\n2 Total organic carbon per cent. by weight, minimum 11\n3 Specific gravity 1.1-1.2\n4 pH (10% aqueous solution) 4.3 ±1\n5 Solubility per cent., minimum 99.57',
+    dosage: ['Two foliar applications at 1.25 l/ha'],
+    crops: ['Green gram'],
     gazette: GAZETTE,
   },
 ];
 
 export const SLUG_TO_BRAND = {
-  'HUMICID': 'HUMICID',
-  'HUMICID+': 'HUMICID +',
-  'HUMICID%2B': 'HUMICID +',
-  'HUMICID ': 'HUMICID +',
   'HUMICID++': 'HUMICID ++',
   'HUMICID%2B%2B': 'HUMICID ++',
   'HUMICID  ': 'HUMICID ++',
-  'SEA EXTRACT': 'SEA EXTRACT',
-  'BOT EXTRACT': 'BOT EXTRACT',
-  'OR MIX (NUTRIENT MOBILIZER)': 'OR MIX (NUTRIENT MOBILIZER)',
-  'OR MIX(NUTRIENT MOBILIZER)': 'OR MIX (NUTRIENT MOBILIZER)',
-  'OR%20MIX(NUTRIENT%20MOBILIZER)': 'OR MIX (NUTRIENT MOBILIZER)',
-  'N CHEM (PRO-H)': 'N CHEM (PRO-H)',
-  'N CHEM (Micro - Cell)': 'N CHEM (Micro - Cell)',
-  'N CHEM (Micro - Con)': 'N CHEM (Micro - Con)',
+  'multi root': 'MULTI ROOT',
+  'multi%20root': 'MULTI ROOT',
+  'prince gold': 'PRINCE GOLD',
+  'prince%20gold': 'PRINCE GOLD',
+  'PH-60': 'PH-60',
+  'kalpavruksha': 'KALPAVRUKSHA',
+  'shiri': 'SHIRI PHOS',
 };
 
 export function findProductBySlug(slug) {
@@ -100,7 +70,7 @@ export function findProductBySlug(slug) {
   const normalized = decoded.replace(/\+/g, ' ');
   const brand = SLUG_TO_BRAND[normalized] || SLUG_TO_BRAND[slug] || normalized;
   const found = PRODUCTS.find(p => p.brand.toUpperCase() === brand.toUpperCase());
-  return found || PRODUCTS.find(p => p.brand === 'HUMICID');
+  return found || PRODUCTS[0];
 }
 
 export function findProductByBrand(brand) {
