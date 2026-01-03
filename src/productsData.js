@@ -41,6 +41,44 @@ export const PRODUCTS = [
     crops: ['Chilli', 'Tomato'],
     gazette: GAZETTE,
   },
+  {
+    brand: 'SBO GEMGREEN BOOSTO',
+    specification: 'Live Microorganisms, Microbial Cell (Methylococcus)',
+    composition: 'Methylococcus capsulatus: 1x10⁹ Min CFU/ml',
+    dosage: [
+      'Paddy: Three applications (One seedling dip and two foliar applications) at 40 g/ha',
+      'Maize: Two foliar applications at 40 g/ha'
+    ],
+    crops: ['Paddy', 'Maize'],
+    gazette: GAZETTE,
+  },
+  {
+    brand: 'SBO MIX BOOSTO',
+    specification: 'Mixture of seaweed extract, Humic and Fulvic Acid and Vitamins',
+    composition: 'Alginic Acid: 0.102%\nGlycine: 10.0%\nHumic Acid: 9.89%\nFulvic Acid: 0.31%\nVitamin C: 2.0%\nTotal Dissolved solids: 10.22%\nTotal Organic Carbon: 4.5%',
+    dosage: ['Two foliar application at 2 L/ha'],
+    crops: ['Cotton'],
+    gazette: GAZETTE,
+  },
+  {
+    brand: 'SBO PROTEIN BOOSTO',
+    specification: 'Protein Hydrolysates and Amino Acids Bacterial biomass hydrolysate (Amino acids 2%)',
+    composition: 'Free Amino acid: 0.8-1.2%\nTotal Organic Carbon: 1.0%',
+    dosage: [
+      'Grapes: Four foliar sprays at 1.25 L/ha to 2.0 L/ha depending on canopy size',
+      'Chilli: Three foliar applications at 3.75 L/ha'
+    ],
+    crops: ['Grape', 'Chilli'],
+    gazette: GAZETTE,
+  },
+  {
+    brand: 'SBO SUCHMI Con',
+    specification: 'Live Microorganisms, Microbial Consortium',
+    composition: 'Methylobacterium symbioticum: 0.5x10⁷ Min cfu/g\nMethylobacterium extrorquens: 0.5x10⁷ Min cfu/g',
+    dosage: ['Single soil application just before planting at 7.5 kg/ha as basal dose'],
+    crops: ['Onion'],
+    gazette: GAZETTE,
+  },
 ];
 
 export const SLUG_TO_BRAND = {
@@ -58,6 +96,14 @@ export const SLUG_TO_BRAND = {
   'SBO%20SEAWEED%20BOOSTO': 'SBO SEAWEED BOOSTO',
   'SBO SPIRULINA BOOSTO': 'SBO SPIRULINA BOOSTO',
   'SBO%20SPIRULINA%20BOOSTO': 'SBO SPIRULINA BOOSTO',
+  'SBO GEMGREEN BOOSTO': 'SBO GEMGREEN BOOSTO',
+  'SBO%20GEMGREEN%20BOOSTO': 'SBO GEMGREEN BOOSTO',
+  'SBO MIX BOOSTO': 'SBO MIX BOOSTO',
+  'SBO%20MIX%20BOOSTO': 'SBO MIX BOOSTO',
+  'SBO PROTEIN BOOSTO': 'SBO PROTEIN BOOSTO',
+  'SBO%20PROTEIN%20BOOSTO': 'SBO PROTEIN BOOSTO',
+  'SBO SUCHMI Con': 'SBO SUCHMI Con',
+  'SBO%20SUCHMI%20Con': 'SBO SUCHMI Con',
 };
 
 export function findProductBySlug(slug) {
