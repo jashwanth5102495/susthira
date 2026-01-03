@@ -35,7 +35,7 @@ export const PRODUCTS = [
   },
   {
     brand: 'SBO SPIRULINA BOOSTO',
-    specification: 'Foliar Application (Liquid)',
+    specification: 'Botanical Extract Spirulina 10%',
     composition: 'Protein Weight (% Min.): 6.0',
     dosage: ['Two foliar sprays at 750 ml/ha'],
     crops: ['Chilli', 'Tomato'],
