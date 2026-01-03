@@ -76,7 +76,7 @@ export default function App() {
 
         {/* Info grid with StarBorder */}
         <section className="mt-8 grid grid-cols-1 gap-4">
-          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5">
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">📰</span>
@@ -88,7 +88,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5">
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">⚗️</span>
@@ -100,7 +100,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5">
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">🧪</span>
@@ -112,7 +112,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5">
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">🌶️</span>
@@ -124,7 +124,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5">
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">🧴</span>
@@ -141,7 +141,7 @@ export default function App() {
               </div>
             </div>
           </div>
-          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("/bb.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+          <div className="relative rounded-2xl border border-white/20 backdrop-blur-md p-4 sm:p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:-translate-y-0.5">
             <div className="flex items-start">
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#e8d8a6]/25 text-[#e8d8a6] mr-3 shadow-inner">
                 <span className="text-lg">🏭</span>
@@ -149,9 +149,11 @@ export default function App() {
               <div className="flex-1">
                 <div className="text-[#d9c98f] text-sm">Manufactured and Marketed By:</div>
                 <div className="text-white/80 text-xs sm:text-sm mt-1 leading-snug">
-                  Ground Floor, Plot No.56 Tubinkere Industrial Area,<br />
-                  Bangalore Mysore Road, Mandya-571402. Karnataka<br />
-                  Customer Care No. : 78921 76447, Email:microphostbt@gmail.com
+                  <span className="font-semibold text-white">SUSTHIRA BIO ORGANICS LLP</span><br />
+                  Address: No.01, Aswath Narayana Road, Tirumala Nagar,<br />
+                  Attur, Yelahanka, Bangalore-560064, Karnataka<br />
+                  Ph. 8197218012/6364762626. Email: samoagri2020@gmail.com<br />
+                  Website : https://samop.in
                 </div>
               </div>
             </div>
